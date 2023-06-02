@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
 import Container from "../Container";
 import { TbBeach } from "react-icons/tb";
 import {
   GiMountains,
   GiIsland,
-  GiFishingBoat,
+  GiBoatFishing,
   GiCastle,
   GiCampingTent,
   GiMountainCave,
@@ -56,7 +55,7 @@ export const categories = [
   },
   {
     label: "Lake",
-    icon: GiFishingBoat,
+    icon: GiBoatFishing,
     description: "This property is located near a lake",
   },
   {

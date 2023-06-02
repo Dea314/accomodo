@@ -15,3 +15,10 @@ body,
   color: #333;
   background-color: #fff; */
 }
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
