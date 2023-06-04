@@ -65,6 +65,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
                   style={{ objectFit: "cover" }}
                   src={value}
                   alt="House"
+                  priority
                 />
               </div>
             )}
