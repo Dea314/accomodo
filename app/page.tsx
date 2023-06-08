@@ -30,7 +30,6 @@ export default async function Home() {
               />
             );
           })}
-          My listings
         </div>
       </Container>
     </ClientOnly>

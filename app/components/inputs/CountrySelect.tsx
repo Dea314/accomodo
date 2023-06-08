@@ -1,5 +1,6 @@
 "use client";
 
+import ReactCountryFlag from "react-country-flag";
 import useCountries from "@/app/hooks/useCountries";
 import Select from "react-select";
 
@@ -28,10 +29,13 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange }) => {
         value={value}
         onChange={(value) => onChange(value as CountrySelectValue)}
         formatOptionLabel={(option: any) => (
-          <div
-            className="
-          flex flex-row items-center gap-3"
-          >
+          <div className="flex flex-row items-center gap-3">
+            <ReactCountryFlag
+              className="w-[1em] h-[1em]"
+              countryCode={option.value}
+              svg
+              aria-label={option.label}
+            />
             <div>{option.flag}</div>
 
             <div>
