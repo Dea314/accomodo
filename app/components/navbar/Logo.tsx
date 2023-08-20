@@ -6,16 +6,18 @@ const Logo = () => {
   const router = useRouter();
 
   return (
-    <div className="flex items-center">
+    <div
+      onClick={() => router.push("/")}
+      className="flex items-center cursor-pointer"
+    >
       <Image
-        onClick={() => router.push("/")}
         alt="Logo"
-        className="cursor-pointer hidden md:block"
+        className="cursor-pointer md:block"
         height={50}
         width={50}
         src="/images/logo.png"
       />
-      <span className="ml-4 text-lg"> Accomodo</span>
+      <span className="ml-4 text-lg hidden lg:block underline">Accomodo</span>
     </div>
   );
 };
